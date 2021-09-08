@@ -10,19 +10,22 @@ Usernames:
 
 Aplication made in Laravel + Vue.
 
-Move in folder "laravel" and call:
+To start, run the following commands:
 
+```sh
 npm install
 php -r "unlink('composer-setup.php');"
 composer require tymon/jwt-auth:dev-develop --prefer-source
 php artisan vendor:publish --provider="Tymon\JWTAuth\Providers\LaravelServiceProvider"
 
 npm run production
-//or
-npm run dev
 
 php artisan serve --port=8000
+```
 
-Aplication will be: localhost:8000
+> or
+npm run dev
 
-// Tables are made in laravel, to write them in mysql run:  php artisan migrate
+Aplication will be on: localhost:8000
+
+> Tables are made in laravel, to write them in mysql run:  php artisan migrate
