@@ -13,6 +13,8 @@ Aplication made in Laravel + Vue.
 To start, run the following commands:
 
 ```sh
+mv .env.example .env
+
 npm install
 php -r "unlink('composer-setup.php');"
 composer require tymon/jwt-auth:dev-develop --prefer-source
