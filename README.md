@@ -34,3 +34,4 @@ npm run dev
 Aplication will be on: localhost:8000
 
 > Tables are made in laravel, to write them in mysql run:  php artisan migrate
+> db.sql contains all the predefined userdata, import them in phpMyAdmin
