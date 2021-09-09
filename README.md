@@ -16,8 +16,11 @@ To start, run the following commands:
 mv .env.example .env
 
 npm install
+
+php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
+php composer-setup.php
 php -r "unlink('composer-setup.php');"
-composer require tymon/jwt-auth:dev-develop --prefer-source
+php composer.phar require tymon/jwt-auth:dev-develop --prefer-source
 php artisan vendor:publish --provider="Tymon\JWTAuth\Providers\LaravelServiceProvider"
 
 npm run production
